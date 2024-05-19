@@ -1,7 +1,7 @@
 # Grocery_Store
 Output Images
-![Uploading Screenshot 2024-05-19 160726.png…]()
-![Uploading Screenshot 2024-05-19 160746.png…]()
+![Screenshot 2024-05-19 160726](https://github.com/sattisatyanarayanareddy/Grocery_Store/assets/113776283/46ba8dd1-ac74-4abb-b846-78a735f91aa8)
+![Screenshot 2024-05-19 160746](https://github.com/sattisatyanarayanareddy/Grocery_Store/assets/113776283/f0b43150-1ea1-4af2-8141-0d4211a1eb4a)
 ![Screenshot 2024-05-19 160807](https://github.com/sattisatyanarayanareddy/Grocery_Store/assets/113776283/86df70f3-f018-412f-ba9b-fef9b968ff95)
 ![Screenshot 2024-05-19 160823](https://github.com/sattisatyanarayanareddy/Grocery_Store/assets/113776283/f7cdbe7f-cee6-449e-b7ce-ff46d7642be5)
 ![Screenshot 2024-05-19 160836](https://github.com/sattisatyanarayanareddy/Grocery_Store/assets/113776283/acbcc675-4171-42ef-94a6-6695e93880b6)
