@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom Styles -->
+    
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<section id="nav1">
+  <nav id="custom-navbar" class="navbar navbar-light bg-light">
+    <a id="navbar-logo" class="navbar-brand" href="#">
+        <img src="./images/11697.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        Grocery
+    </a>
+    <div id="navbar-search-bar" class="form-inline justify-content-center">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-input">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="filterProducts()">
+          <i class="bi bi-search">Search</i>
+      </button>
+  </div>
+    <div id="navbar-profile" id="navbar-login">
+        <a class="nav-link" href="#">
+          <a href="./pages/login.html" id="login">
+            Login
+          </a>
+            <img src="./images/profile.jpg" width="30" height="30" alt="Profile">
+        </a>
+    </div>
+</nav>
+</section>
+<section id="nav2">
+  <nav id="custom-navbar-2">
+    <a href="#" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#products-section">Products</a>
+    <a href="#contact-section">Contact Us</a>
+  </nav>
+</section>
+<section id="imageslider">
+  <div id="image-slider" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 80vh;" data-bs-interval="3000">
+    <div class="carousel-inner" style="width: 100%; height: 100%;">
+      <div class="carousel-item" style="width: 100%; height: 100%;">
+        <img src="./images/newimg7.jpg" class="d-block w-100 h-100" alt="Slide 2">
+      </div>
+        <div class="carousel-item active" style="width: 100%; height: 100%;">
+            <img src="./images/sliderimg1.png" class="d-block w-100 h-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item" style="width: 100%; height: 100%;">
+            <img src="./images/newimg2.jpg" class="d-block w-100 h-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item" style="width: 100%; height: 100%;">
+          <img src="./images/newimg3.jpg" class="d-block w-100 h-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item" style="width: 100%; height: 100%;">
+        <img src="./images/newimg4.jpg" class="d-block w-100 h-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item" style="width: 100%; height: 100%;">
+      <img src="./images/newimg5.jpg" class="d-block w-100 h-100" alt="Slide 2">
+  </div>
+  <div class="carousel-item" style="width: 100%; height: 100%;">
+    <img src="./images/newimg6.jpg" class="d-block w-100 h-100" alt="Slide 2">
+</div>
+        <!-- Add more carousel items as needed -->
+    </div>
+    <!-- Centered left control button -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#image-slider" data-bs-slide="prev" style="top: 35%; left: 0; transform: translateY(-50%); color: black;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <!-- Centered right control button -->
+    <button class="carousel-control-next" type="button" data-bs-target="#image-slider" data-bs-slide="next" style="top: 35%; right: 0; transform: translateY(-50%); color: black;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section id="about">
+    <div class="about-us-section"><br><br>
+      <h2>ABOUT US</h2><br>
+      <p>Welcome to Grocery Store, your neighborhood destination for fresh and quality groceries. At Grocery Store,
+         we believe in providing our community with a convenient and enjoyable shopping experience.</p>
+         <h3>
+          Our Mission
+         </h3>
+         <p>Our mission is simple: to offer a diverse selection of high-quality products while maintaining a commitment to customer satisfaction and community engagement. We aim to be more than just a grocery store; we strive to be an integral part of your daily life, 
+          providing you with the essentials and the indulgences that make your meals memorable.</p>
+          <h3>Exceptional Service</h3>
+          <p>Our friendly and knowledgeable staff is here to make your shopping experience enjoyable. Whether you have a question about a product, 
+            need assistance finding an item, or are looking for cooking tips and recipes, we are always ready to help. We prioritize customer service, and your satisfaction is our top priority.
+
+            Thank you for choosing [Your Grocery Store Name]. We look forward to being your go-to grocery store,
+             providing you with quality, convenience, and a touch of community in every visit.</p>
+      <!-- Add more content as needed -->
+  </div>
+  </section>
+</section>
+<section id="products-section">
+  <div class="section-title"><br><br><br>
+    <h2>PRODUCTS</h2>
+  </div>
+  <div id="product-container"></div>
+</section>
+<!-- contact section -->
+<section id="contact-section" class="contact">
+  <div class="container">
+    <div class="section-title"><br>
+      <h2>CONTACT US</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="info-box">
+              <i class="bi bi-share-fill"></i>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bi bi-envelope-at-fill"></i>
+              <h3>Email Me</h3>
+              <p>ssnarayanareddy1126@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bi bi-telephone-fill"></i>
+              <h3>Call Me</h3>
+              <p>+91 8790549229</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form id="contact-form" action="./php/contact-section.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container">
+    <h3>Grocery Products</h3>
+    <div class="social-links">
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>2023-2024</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">Satya</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="./javascript/script.js"></script>
+</body>
+</html>

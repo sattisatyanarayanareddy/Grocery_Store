@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Register Forms</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container1,
+    .container2 {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .container2 {
+      display: none;
+    }
+
+    .inputbox {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+
+    label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #888;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+
+    input:focus + label,
+    input:valid + label {
+      top: -12px;
+      font-size: 12px;
+      color: #333;
+    }
+
+    .login-btn,
+    .register-btn {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover,
+    .register-btn:hover {
+      background-color: #45a049;
+    }
+
+    .pack1,
+    .pack2 {
+      margin-top: 20px;
+      color: #555;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container1">
+  <h2>Login</h2>
+  <form class="form-box" id="loginForm">
+    <div class="inputbox">
+      <input type="text" required>
+      <label for="username">Username</label>
+    </div>
+    <div class="inputbox">
+      <input type="password" required>
+      <label for="password">Password</label>
+    </div>
+    <a href="#" class="forget get">Forget Password?</a>
+    <input type="submit" value="Login" class="login-btn">
+    <p class="pack1">Don't have an account? <a href="#" class="register" onclick="showRegisterForm()">Register</a></p>
+  </form>
+</div>
+
+<div class="container2">
+  <h2>Register</h2>
+  <form class="form-box" id="registerForm">
+    <div class="inputbox">
+      <input type="text" required>
+      <label for="username">Username</label>
+    </div>
+    <div class="inputbox">
+      <input type="email" required>
+      <label for="email">Email</label>
+    </div>
+    <div class="inputbox">
+      <input type="password" required>
+      <label for="password">Password</label>
+    </div>
+    <input type="submit" value="Register" class="register-btn">
+    <p class="pack2">Have an account? <a href="#" class="login" onclick="showLoginForm()">Login</a></p>
+  </form>
+</div>
+
+<script>
+  function showRegisterForm() {
+    document.querySelector('.container1').style.display = 'none';
+    document.querySelector('.container2').style.display = 'block';
+  }
+
+  function showLoginForm() {
+    document.querySelector('.container1').style.display = 'block';
+    document.querySelector('.container2').style.display = 'none';
+  }
+
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Add your login functionality here
+    console.log('Login form submitted');
+  });
+
+  document.getElementById('registerForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Add your register functionality here
+    console.log('Register form submitted');
+  });
+</script>
+
+</body>
+</html>
